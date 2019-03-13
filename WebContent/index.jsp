@@ -5,9 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
+<title>My first J2EE project</title>
 </head>
 <body>
-
+	<form action="" method="post">
+		<input type="text" name="firstname"/>
+		<input type="text" name="lastname"/>
+		<input type="submit" value="submit"/>
+	</form>
 </body>
 </html>
