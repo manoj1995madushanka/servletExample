@@ -8,10 +8,18 @@
 <title>My first J2EE project</title>
 </head>
 <body>
-	<form action="" method="post">
-		<input type="text" name="firstname"/>
-		<input type="text" name="lastname"/>
-		<input type="submit" value="submit"/>
+	<form action="servletexample" method="post">
+		<table border="0">
+			<tr>
+				<td>First name : </td><td><input type="text" name="firstname"/></td>
+			</tr>
+			<tr>
+				<td>Last name : </td><td><input type="text" name="lastname"/></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="submit"/></td>
+			</tr>
+		</table>
 	</form>
 </body>
 </html>
