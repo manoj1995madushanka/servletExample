@@ -8,7 +8,7 @@
 <title>My first J2EE project</title>
 </head>
 <body>
-	<form action="servletexample" method="post">
+	<form action="servetexample" method="post">
 		<table border="0">
 			<tr>
 				<td>First name : </td><td><input type="text" name="firstname"/></td>

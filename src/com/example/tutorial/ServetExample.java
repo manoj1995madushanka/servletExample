@@ -17,7 +17,13 @@ public class ServetExample extends HttpServlet {
    
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		out.println("Hello World!");
+		
+		String firstname  = request.getParameter("firstname");
+		String lastname = request.getParameter("lastname");
+		
+		out.println("Hello "+firstname+" "+lastname+";"+" We got your submitted data");
+		
+		//out.println("Hello World!");
 	}
 
 }
