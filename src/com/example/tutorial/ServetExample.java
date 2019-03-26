@@ -16,17 +16,21 @@ public class ServetExample extends HttpServlet {
        
    
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter out = response.getWriter();
+		// PrintWriter out = response.getWriter();
 		
 		if (request.getParameter("firstname") == null || request.getParameter("lastname") == null) {
 			getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+			return;
 		}
 		
 		
-		String firstname  = request.getParameter("firstname");
-		String lastname = request.getParameter("lastname");
+		String firstName  = request.getParameter("firstname");
+		String lastName = request.getParameter("lastname");
 		
-		out.println("Hello "+firstname+" "+lastname+";"+" We got your submitted data");
+		request.setAttribute("firstname",firstName);
+		request.setAttribute("lastname", lastName);
+		
+		getServletContext().getRequestDispatcher("/output.jsp").forward(request, response);
 		
 		//out.println("Hello World!");
 	}
