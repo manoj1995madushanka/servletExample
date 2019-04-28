@@ -17,8 +17,17 @@
 	String firstName =(String) request.getAttribute("firstname");
 	String lastName = (String) request.getAttribute("lastname");
 	
-	out.print(firstName + " " + lastName);
+	/* out.print(firstName + " " + lastName); */
 %>
+
+<table>
+	<tr>
+		<td>First name:</td><td><%= firstName %></td>
+	</tr>
+	<tr>
+		<td>Last name:</td><td><%= lastName %></td>
+	</tr>
+</table>
 
 </body>
 </html>
